@@ -12,3 +12,20 @@ httpx
 pytest
 pypdf
 openai
+
+# Security
+python-jose[cryptography]
+passlib[bcrypt]
+slowapi
+
+# Blockchain
+web3
+py-solc-x
+
+# Reporting
+reportlab
+
+# AI Providers
+google-generativeai
+
+
