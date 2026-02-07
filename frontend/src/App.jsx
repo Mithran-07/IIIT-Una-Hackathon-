@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import UploadPanel from "./components/UploadPanel";
+import ScoreCard from "./components/ScoreCard";
 
-function App() {
-  const [count, setCount] = useState(0)
+function App(){
+  return(
+    <div style={{display:"grid",gridTemplateColumns:"3fr 1fr",height:"100vh"}}>
 
-  return (
-    <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <UploadPanel/>
+        <ScoreCard/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div>
+        <h3>Chatbot Area</h3>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+    </div>
+  );
 }
 
-export default App
+export default App;
