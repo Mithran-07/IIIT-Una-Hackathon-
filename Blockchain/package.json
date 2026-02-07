@@ -1,0 +1,16 @@
+{
+  "name": "auditx-blockchain",
+  "version": "1.0.0",
+  "description": "AuditX Blockchain Deployment Scripts",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "ganache": "ganache --port 7545 --deterministic --accounts 10"
+  },
+  "dependencies": {
+    "solc": "^0.8.20",
+    "web3": "^4.2.0"
+  },
+  "devDependencies": {
+    "ganache": "^7.9.0"
+  }
+}
